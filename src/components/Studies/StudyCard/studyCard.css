@@ -1,0 +1,7 @@
+.studies__item--name {
+    font-weight: bold;
+}
+
+.studies__item--place, .studies__item--time {
+    list-style: none;
+}

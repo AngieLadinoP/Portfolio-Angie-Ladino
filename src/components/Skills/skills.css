@@ -1,0 +1,38 @@
+.skills {
+    background: #000000;
+    width: 100%;
+    color: white;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+
+
+.skills__title {
+    color: white;
+    margin-top: 60px;
+}
+
+
+
+.studies__icon:hover {
+    color: var(--red-color)
+}
+
+
+@media (min-width: 700px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .skills__title {
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin-top: 60px;
+    }
+}

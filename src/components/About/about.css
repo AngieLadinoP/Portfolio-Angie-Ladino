@@ -1,0 +1,70 @@
+.about {
+    width: 90%;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 15px;
+    background-color: white;
+
+}
+
+
+.about__title {
+    margin-top: 50px;
+    background-color: white;
+}
+
+
+.about__text {
+    background-color: white;
+}
+
+.about__img {
+    width: 40vw;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.about__img:hover {
+    border: 3px solid #e71224;
+}
+
+.button--download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media (min-width: 700px) {
+    .about {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        margin: auto;
+    }
+
+    .about__title {
+        grid-column: 1/span2;
+        grid-row: 1;
+    }
+
+    .about__img {
+        width: 18vw;
+    }
+
+    .button--download {
+        grid-column: 1/span2;
+        grid-row: 3;
+    }
+
+    .button--download {
+        width: 250px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 24px;
+    }
+}

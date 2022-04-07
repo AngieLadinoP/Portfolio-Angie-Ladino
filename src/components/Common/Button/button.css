@@ -1,0 +1,53 @@
+ .button--animated {
+   background: var(--red-color);
+   color: white;
+   border: 2px solid var(--red-color);
+   text-align: center;
+   border-radius: 5px;
+   cursor: pointer;
+   width: auto;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+ }
+
+ .button--animated:hover {
+   color: var(--red-color);
+   font-weight: bold;
+   border: 1px solid;
+ }
+
+ .button--animated::after {
+   transition: all 0.3s ease;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0) rotate(-180deg);
+   content: "";
+   background: black;
+   position: absolute;
+   z-index: -1;
+   display: block;
+ }
+
+ .button--animated:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1) rotate(0deg);
+ }
+
+ .button--big {
+   font-size: 20px;
+   width: 200px;
+   height: 45px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+ }
+
+ .button--small {
+   margin: 5px;
+   width: 90px;
+   height: 35px;
+   font-size: 16px;
+ }
