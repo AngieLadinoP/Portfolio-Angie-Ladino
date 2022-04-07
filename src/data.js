@@ -25,7 +25,8 @@ export const projects = [
   },
   {
     title: "Fruti Snacks",
-    description: "",
+    description:
+      "Interactive interface that receives user inputs and delivers them to the company Fruti Snacks as a digital order.",
     image:
       "https://drive.google.com/uc?export=view&id=1jzTJvR1Y1eymymIHuDSWTdBONSUB_cpr",
     code: "https://github.com/AngieLadinoP/Fruti-snacks",
@@ -33,7 +34,8 @@ export const projects = [
   },
   {
     title: "Rick and Morty",
-    description: "",
+    description:
+      " Interactive interface made with react. Data fetching of the official Rick and Morty API to display information about characters and episodes of the series.",
     image:
       "https://drive.google.com/uc?export=view&id=1MEXNxD5HSx7fDz7nifPKI_k8mbeLahqj",
     code: "https://github.com/AngieLadinoP/API_Rick_and_Morty",
@@ -41,7 +43,8 @@ export const projects = [
   },
   {
     title: "To do list",
-    description: "",
+    description:
+      "Web application developed with react for registering daily or weekly tasks",
     image:
       "https://drive.google.com/uc?export=view&id=1KAoXqrQNJUdTAMNj9W_0t41fLwwYo-tX",
     code: "https://github.com/AngieLadinoP/To-do-list",
@@ -66,7 +69,8 @@ export const projects = [
   },
   {
     title: "Dungeon",
-    description: "",
+    description:
+      "Traditional dungeon game developed with html, css and javascript",
     image:
       "https://drive.google.com/uc?export=view&id=1yhqPflkG1hTMcdjzYng_XTe7t4zNKMm2",
     code: "https://github.com/AngieLadinoP/juegoLaberinto",

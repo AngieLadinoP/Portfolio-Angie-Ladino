@@ -1,5 +1,5 @@
 export const studies = [
-  { title: "Bootcamp Prográmate", place: "Educamás", status: "In progress" },
+  { title: "Bootcamp Prográmate", place: "Educamás", status: "2021-2022" },
   {
     title: "Analysis and Development of Information Systems Technologist",
     place: "SENA",

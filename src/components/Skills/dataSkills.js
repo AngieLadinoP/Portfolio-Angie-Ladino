@@ -10,5 +10,8 @@ export const skills = [
   { text: "CSS", level: "" },
   { text: "JavaScript", level: "" },
   { text: "React", level: "" },
+  { text: "MongoDB", level: "" },
+  { text: "Express", level: "" },
   { text: "GIT", level: "" },
+  { text: "SCRUM", level: "" },
 ];
