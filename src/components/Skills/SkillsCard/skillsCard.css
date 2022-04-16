@@ -22,8 +22,11 @@
 }
 
 .column {
-    column-count: 2;
+    column-count: 1;
+
 }
+
+
 
 @media (min-width: 700px) {
 
@@ -42,5 +45,14 @@
 
     .skills__icon {
         font-size: 100px;
+    }
+
+
+}
+
+@media (min-width: 990px) {
+    .column {
+        column-count: 2;
+        column-gap: 50px;
     }
 }

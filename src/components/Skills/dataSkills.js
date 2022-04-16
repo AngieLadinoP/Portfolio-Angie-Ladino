@@ -1,4 +1,4 @@
-export const languages = [
+export const languagesEnglish = [
   { text: "Spanish", level: "Native" },
   { text: "English", level: "B2" },
   { text: "German", level: "B1" },
@@ -16,4 +16,9 @@ export const skills = [
   { text: "Express", level: "" },
   { text: "GIT", level: "" },
   { text: "SCRUM", level: "" },
+];
+export const languagesSpanish = [
+  { text: "Español", level: "Nativo" },
+  { text: "Inglés", level: "B2" },
+  { text: "Alemán", level: "B1" },
 ];

@@ -80,7 +80,31 @@
     display: none;
 }
 
-@media (max-width: 700px) {
+
+.lang_toggle {
+    color: #ffffff;
+    display: flex;
+    width: auto;
+
+}
+
+.lang_toggle p {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.lang_toggle p:first-child {
+    border-right: solid #ffffff;
+}
+
+.lang-active {
+    text-decoration: underline;
+    text-decoration-color: white;
+    -moz-text-decoration-color: white;
+
+}
+
+@media (max-width: 900px) {
     .nav {
         justify-content: space-between;
     }

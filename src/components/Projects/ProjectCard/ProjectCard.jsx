@@ -3,7 +3,7 @@ import { Button } from "../../Common/Button/Button.jsx";
 import "./projectCard.css";
 
 export const ProjectCard = (props) => {
-  const { title, image, description, demo, code } = props;
+  const { title, image, description, demo, code, english } = props;
   const goToLink = (link) => {
     window.open(link, "_blank");
   };
@@ -22,7 +22,7 @@ export const ProjectCard = (props) => {
           type="button"
         />
         <Button
-          name="Code"
+          name={english ? "Code" : "Código"}
           buttonAction={() => goToLink(code)}
           styleButton="button--small"
           type="button"

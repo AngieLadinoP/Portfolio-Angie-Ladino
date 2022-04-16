@@ -3,15 +3,19 @@ import "./contact.css";
 import { Form } from "./Form/Form.jsx";
 import { socialNetworks } from "./dataContact.js";
 
-export const Contact = () => {
+export const Contact = ({ english }) => {
   return (
     <div className="contact" id="contact">
-      <h2 className="title contact__title">Get in touch</h2>
+      <h2 className="title contact__title">
+        {english ? "Get in touch" : "Contáctame"}
+      </h2>
       <div className="contact__form">
-        <Form />
+        <Form english={english} />
       </div>
       <div className="social-media">
-        <h3 className="social-media__title title2">Social Media</h3>
+        <h3 className="social-media__title title2">
+          {english ? "Social media" : "Redes sociales"}
+        </h3>
         <div className="social-media__icons">
           {socialNetworks.map((item, index) => (
             <a

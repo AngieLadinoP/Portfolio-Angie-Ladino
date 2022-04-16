@@ -1,11 +1,14 @@
 import React from "react";
 import "./projects.css";
-import { projects } from "../../data.js";
+import { projectsEnglish, projectsSpanish } from "../../data.js";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
-export const Projects = () => {
+export const Projects = ({ english }) => {
+  const projects = english ? projectsEnglish : projectsSpanish;
   return (
     <section className="projects" id="projects">
-      <h2 className="title projects__title">Projects</h2>
+      <h2 className="title projects__title">
+        {english ? "Projects" : "Proyectos"}
+      </h2>
       <div className="projects__cards">
         {projects.map((project, index) => (
           <ProjectCard
@@ -15,6 +18,7 @@ export const Projects = () => {
             description={project.description}
             demo={project.demo}
             code={project.code}
+            english={english}
           />
         ))}
       </div>

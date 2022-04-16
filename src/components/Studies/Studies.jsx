@@ -1,13 +1,16 @@
 import React from "react";
 import { StudyCard } from "./StudyCard/StudyCard.jsx";
 import { FaAward } from "react-icons/fa";
-import { studies } from "./dataStudies.js";
+import { studiesEnglish, studiesSpanish } from "./dataStudies.js";
 import "./studies.css";
 
-export const Studies = () => {
+export const Studies = ({ english }) => {
+  const studies = english ? studiesEnglish : studiesSpanish;
   return (
     <section className="studies" id="studies">
-      <h2 className="title studies__title">Studies</h2>
+      <h2 className="title studies__title">
+        {english ? "Studies" : "Estudios"}
+      </h2>
       <div className="studies__icon">
         <FaAward />
       </div>
