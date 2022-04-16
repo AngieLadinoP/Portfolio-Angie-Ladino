@@ -9,7 +9,7 @@ export const SkillsCard = (props) => {
         {section}
       </h3>
       <div className={`skills__icon skills__icon--${name}`}>{icon}</div>
-      <ul className={`${name}__items`}>
+      <ul className={`${name}__items column`}>
         {data.map((data, index) => (
           <li key={index} className={`text ${name}__item`}>
             {data.text} {data.level}

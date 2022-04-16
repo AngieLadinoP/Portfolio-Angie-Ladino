@@ -21,6 +21,10 @@
     color: var(--red-color);
 }
 
+.column {
+    column-count: 2;
+}
+
 @media (min-width: 700px) {
 
     .skills__section {
