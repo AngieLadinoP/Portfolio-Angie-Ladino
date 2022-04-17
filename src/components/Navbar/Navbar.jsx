@@ -43,6 +43,31 @@ export const Navbar = ({ english, setEnglish }) => {
   };
   return (
     <nav className={colorChange ? "color-change--nav" : "nav"}>
+      <img className="nav__logo" src={logo} alt="Logo" />
+      <div className={`nav__items ${isOpen && "open"}`}>
+        {navLinks.map((link, index) => {
+          return (
+            <HashLink
+              smooth
+              to={link.route}
+              key={index}
+              onClick={() => handleNavLink(index)}
+              className={
+                activeLink === index ? "nav__item active" : "nav__item"
+              }
+            >
+              {link.text}
+            </HashLink>
+          );
+        })}
+      </div>
+
+      <div
+        className={`nav__toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="bar"></div>
+      </div>
       <div className="lang_toggle">
         {english ? (
           <>
@@ -75,32 +100,6 @@ export const Navbar = ({ english, setEnglish }) => {
             </p>
           </>
         )}
-      </div>
-      <img className="nav__logo" src={logo} alt="Logo" />
-
-      <div className={`nav__items ${isOpen && "open"}`}>
-        {navLinks.map((link, index) => {
-          return (
-            <HashLink
-              smooth
-              to={link.route}
-              key={index}
-              onClick={() => handleNavLink(index)}
-              className={
-                activeLink === index ? "nav__item active" : "nav__item"
-              }
-            >
-              {link.text}
-            </HashLink>
-          );
-        })}
-      </div>
-
-      <div
-        className={`nav__toggle ${isOpen && "open"}`}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="bar"></div>
       </div>
     </nav>
   );
